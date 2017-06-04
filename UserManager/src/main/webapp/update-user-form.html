@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>User Manager</title>
+</head>
+<body>
+	
+	<b>
+	Menu (JSP):
+	<a href="/">Home</a>
+	<a href="all-users">All Users</a>
+	<a href="new-user">New User</a><br><br>
+	</b>
+	REST test: 
+	<a href="rest-all-users">All Users</a>
+	<a href="new-user-form.html">New User</a>
+	<a href="update-user-form.html">Edit User</a>
+	<a href="block-user-form.html">Block User</a>
+	<a href="unblock-user-form.html">Unblock User</a>
+	<a href="delete-user-form.html">Delete User</a>
+	<a href="login-form.html">Login</a>
+	<br><br><br>
+	
+	<h3>Edit user</h3>
+	
+	<form method="POST" action="rest-update-user">
+		<table>
+			<tr>
+				<td>Current login</td>
+				<td><input type="text" name="login"/></td>
+			</tr>
+			<tr>
+				<td>New login</td>
+				<td><input type="text" name="newLogin"/></td>
+			</tr>
+			<tr>
+				<td>New password</td>
+				<td><input type="text" name="newPassword"/></td>
+			</tr>
+			<tr>
+				<td>Blocked</td>
+				<td>
+					<input type="radio" name="newBlocked" value="true"/>Yes
+					<input type="radio" name="newBlocked" value="false" checked />No
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Save"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
